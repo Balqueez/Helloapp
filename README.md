@@ -34,7 +34,9 @@ Step 5: Create Branches
        git checkout -b dev
        git checkout -b feature
        git branch [to check the branches]
+
 Pushed both to remote:
+
        git push origin dev
        git push origin feature
 
@@ -46,9 +48,12 @@ Step 6: Pull Requests & Merge
 Step 7: Add .gitignore and README.md
 -------------------------------------
 Created .gitignore and README.md locally:
+
         touch .gitignore
         touch README.md
+
 Added basic content to .gitignore.
+
         git add .gitignore README.md
         git commit -m "gitignore added"
         git push origin master
@@ -56,11 +61,16 @@ Added basic content to .gitignore.
 Step 8: Tagging Versions
 ------------------------
 Created a Git tag v1 on the latest commit (commit message:"gitignore added" with hash df9330):
+
         git tag v1 
         git push origin v1
- Checked the hashes of all commits to get the hash value of desired commit,
+
+ Checked the hashes of all commits to get the hash value of desired commit;
+
         git log --oneline
-Later, changed the v1 tag to point to the initial commit (commit message"initial commit" with hash d363e72):
+
+Later, changed the v1 tag to point to the initial commit (commit message"initial commit" with hash d363e72);
+
         git tag -f v1 d363e72
         git push origin v1
 
@@ -68,6 +78,7 @@ Step 9:README updated
 -----------------------
 
 README.md updated and pushed to remote
+
        git add README.md
        git commit -m "README updated"
        git push
